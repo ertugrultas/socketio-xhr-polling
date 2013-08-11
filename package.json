@@ -1,0 +1,6 @@
+{
+    "name": "xhr-polling", "description": "xhr-polling example", "version": "0.0.1",
+    "dependencies": {
+        "socket.io": "*",
+    }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script type='text/javascript' src='http://localhost:8440/socket.io/socket.io.js'/>
+ <script></script>
+</head>
+<body >
+<h3>Connection Test</h3>
+<script type='text/javascript'>
+    $(function () {
+        window.socket = io.connect('http://localhost:8440');
+        //    window.socket = io.connect('http://localhost:8080');
+        console.log("gonna connect");
+        socket.on('connect', function () {
+            console.log('connected');
+        });
+    });
+</script>
+</body>
+</html>
